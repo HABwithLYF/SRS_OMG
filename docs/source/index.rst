@@ -15,7 +15,7 @@ Indices and tables
    :maxdepth: 2
    :numbered:
 
-* `1.Introduction <https://github.com/HABwithLYF/SRS_OMG/tree/master/docs/build/html/introduction.html/>`_
+* `1.Introduction <https://habwithlyf-srs-omg.readthedocs-hosted.com/en/latest/introduction.html>`_
     * 1.1Purpose 
     * 1.2 Scope
     * 1.3 User characteristics
@@ -77,6 +77,7 @@ This document is to derive a logical model of objective system from the one of c
 1.3 User Characteristics
 ------------------------
 **End-user** - Biologists who do some research about genetic analysis.
+
 **Website maintainers** - workers who do website maintenance and development.
 
 1.4 Overview
@@ -86,9 +87,13 @@ The web application has a simple interface with a single button [Upload and GO].
 1.5 Glossaries
 --------------
 * **Control sample** - a cell sample prepared in its normal condition.
+
 * **Treatment sample** - a cell sample treated by special chemicals, or in which some genes are altered.
+
 * **Differentially expressed genes** - the genes which have significantly different expression levels between two samples.
+
 * **Up-regulation** - a gene is said to be up-regulated if it has higher expression in treatment than in control.
+
 * **logFC**- log fold change of gene expression. log_2 [T/C], where T is the gene expression level from a treatment sample, while C is the gene expression level from a control sample.
 
 ------------
@@ -107,7 +112,9 @@ This project is an online application developed for Little Hill Laboratory for O
 -----------------------
 
 * Friendly user interface
+
 * High efficiency
+
 * Good extensibility
 
 
@@ -143,9 +150,11 @@ Both the users in client side and web site maintainers in management side can ac
 * Client: PC
 CPU: P4 1.8 GHZ
 Memory: 256 MB above
+
 * Web server
 CPU: P4 1.8GHz
 Memory: 256 MB above
+
 * Database server
 CPU: P4 1.8GHz
 Memory: 256 MB above
@@ -154,10 +163,15 @@ Memory: 256 MB above
 3.3 Software Environment
 ------------------------
 **Operating system**: Windows, Mac (Pre - OS X), Linux 
+
 **Database**: SQL Server 
+
 **Developing toolkit**: JDK Version 
+
 **Web Server**: Tomcat
+
 **Flask**: python
+
 **Browser**: IE5+, NS4+, Mozilla Firefox, Opera, Safari
 
 ------------
@@ -229,7 +243,7 @@ Replace 'Control' and 'Treatment' with appropriated column names if provided in 
 5. Non-functional Requirements
 ==============================
 
- 5.1 Interface Requirement
+5.1 Interface Requirement
 --------------------------
 * Page contents: Topic-prominent, the form of website definition, terms and passage should universal, standard and explicit.
 

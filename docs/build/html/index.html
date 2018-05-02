@@ -115,6 +115,7 @@
 </ul>
 </li>
 <li><a class="reference internal" href="#non-functional-requirements">5. Non-functional Requirements</a><ul>
+<li><a class="reference internal" href="#interface-requirement">5.1 Interface Requirement</a></li>
 <li><a class="reference internal" href="#response-time-requirement">5.2 Response Time Requirement</a></li>
 <li><a class="reference internal" href="#aesthetic-requirement">5.3 Aesthetic Requirement</a></li>
 <li><a class="reference internal" href="#reliability-requirement">5.4 Reliability Requirement</a></li>
@@ -211,7 +212,7 @@
 </div>
 <ul>
 <li><dl class="first docutils">
-<dt><a class="reference external" href="https://github.com/HABwithLYF/SRS_OMG/tree/master/docs/build/html/introduction.html/">1.Introduction</a></dt>
+<dt><a class="reference external" href="https://habwithlyf-srs-omg.readthedocs-hosted.com/en/latest/introduction.html">1.Introduction</a></dt>
 <dd><ul class="first last simple">
 <li>1.1Purpose</li>
 <li>1.2 Scope</li>
@@ -316,8 +317,8 @@
 </div>
 <div class="section" id="user-characteristics">
 <h2>1.3 User Characteristics<a class="headerlink" href="#user-characteristics" title="Permalink to this headline">¶</a></h2>
-<p><strong>End-user</strong> - Biologists who do some research about genetic analysis.
-<strong>Website maintainers</strong> - workers who do website maintenance and development.</p>
+<p><strong>End-user</strong> - Biologists who do some research about genetic analysis.</p>
+<p><strong>Website maintainers</strong> - workers who do website maintenance and development.</p>
 </div>
 <div class="section" id="overview">
 <h2>1.4 Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
@@ -375,22 +376,26 @@
 <li>Client: PC</li>
 </ul>
 <p>CPU: P4 1.8 GHZ
-Memory: 256 MB above
-* Web server
-CPU: P4 1.8GHz
-Memory: 256 MB above
-* Database server
-CPU: P4 1.8GHz
+Memory: 256 MB above</p>
+<ul class="simple">
+<li>Web server</li>
+</ul>
+<p>CPU: P4 1.8GHz
+Memory: 256 MB above</p>
+<ul class="simple">
+<li>Database server</li>
+</ul>
+<p>CPU: P4 1.8GHz
 Memory: 256 MB above</p>
 </div>
 <div class="section" id="software-environment">
 <h2>3.3 Software Environment<a class="headerlink" href="#software-environment" title="Permalink to this headline">¶</a></h2>
-<p><strong>Operating system</strong>: Windows, Mac (Pre - OS X), Linux
-<strong>Database</strong>: SQL Server
-<strong>Developing toolkit</strong>: JDK Version
-<strong>Web Server</strong>: Tomcat
-<strong>Flask</strong>: python
-<strong>Browser</strong>: IE5+, NS4+, Mozilla Firefox, Opera, Safari</p>
+<p><strong>Operating system</strong>: Windows, Mac (Pre - OS X), Linux</p>
+<p><strong>Database</strong>: SQL Server</p>
+<p><strong>Developing toolkit</strong>: JDK Version</p>
+<p><strong>Web Server</strong>: Tomcat</p>
+<p><strong>Flask</strong>: python</p>
+<p><strong>Browser</strong>: IE5+, NS4+, Mozilla Firefox, Opera, Safari</p>
 </div>
 </div>
 <hr class="docutils" />
@@ -485,13 +490,15 @@ Replace ‘Control’ and ‘Treatment’ with appropriated column names if prov
 <hr class="docutils" />
 <div class="section" id="non-functional-requirements">
 <h1>5. Non-functional Requirements<a class="headerlink" href="#non-functional-requirements" title="Permalink to this headline">¶</a></h1>
-<blockquote>
-<div>5.1 Interface Requirement</div></blockquote>
+<div class="section" id="interface-requirement">
+<h2>5.1 Interface Requirement<a class="headerlink" href="#interface-requirement" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
+<li>Page contents: Topic-prominent, the form of website definition, terms and passage should universal, standard and explicit.</li>
 <li>Navigation structure: the page should have an explicit navigation direction for user??s convenient.</li>
 <li>Technical environment: The page can be displayed by all kinds of browser in different resolution; No error links and null links; The layout of page are processed by CSS.</li>
 <li>Artistic style: Clean interface ; Rational layout; Right front size; Harmonious color.</li>
 </ul>
+</div>
 <div class="section" id="response-time-requirement">
 <h2>5.2 Response Time Requirement<a class="headerlink" href="#response-time-requirement" title="Permalink to this headline">¶</a></h2>
 <p>The response time of web will be affected by the server thread processing power and the client sends a request number and the related content, content depends on the processing time and complexity.</p>
