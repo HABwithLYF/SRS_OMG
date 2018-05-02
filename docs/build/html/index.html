@@ -81,10 +81,11 @@
               <div class="local-toc"><ul>
 <li><a class="reference internal" href="#">Oh My Genes</a></li>
 <li><a class="reference internal" href="#software-requirements-specification-version1-0">Software Requirements Specification Version1.0</a><ul>
+<li><a class="reference internal" href="#group-members">Group members:</a></li>
 <li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#id1">1. Introduction</a><ul>
+<li><a class="reference internal" href="#introduction">1. Introduction</a><ul>
 <li><a class="reference internal" href="#purpose">1.1 Purpose</a></li>
 <li><a class="reference internal" href="#scope">1.2 Scope</a></li>
 <li><a class="reference internal" href="#user-characteristics">1.3 User Characteristics</a></li>
@@ -100,7 +101,7 @@
 </li>
 <li><a class="reference internal" href="#running-environment">3. Running Environment</a><ul>
 <li><a class="reference internal" href="#network-environment">3.1 Network Environment</a></li>
-<li><a class="reference internal" href="#id2">3.1 Network Environment</a></li>
+<li><a class="reference internal" href="#id1">3.1 Network Environment</a></li>
 <li><a class="reference internal" href="#hardware-environment">3.2 Hardware Environment</a></li>
 <li><a class="reference internal" href="#software-environment">3.3 Software Environment</a></li>
 </ul>
@@ -206,13 +207,24 @@
 </div>
 <div class="section" id="software-requirements-specification-version1-0">
 <h1>Software Requirements Specification Version1.0<a class="headerlink" href="#software-requirements-specification-version1-0" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<div class="section" id="group-members">
+<h2>Group members:<a class="headerlink" href="#group-members" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ul class="simple">
+<li>Huang Anbei  (201632120104)</li>
+<li>Liang Yufang (201632120106)</li>
+</ul>
+</div></blockquote>
+</div>
+<hr class="docutils" />
 <div class="section" id="indices-and-tables">
 <h2>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 </div>
 <ul>
 <li><dl class="first docutils">
-<dt><a class="reference external" href="https://habwithlyf-srs-omg.readthedocs-hosted.com/en/latest/introduction.html">1.Introduction</a></dt>
+<dt>1.Introduction</dt>
 <dd><ul class="first last simple">
 <li>1.1Purpose</li>
 <li>1.2 Scope</li>
@@ -304,16 +316,16 @@
 </div>
 </div>
 <hr class="docutils" />
-<div class="section" id="id1">
-<h1>1. Introduction<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h1>1. Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="purpose">
 <h2>1.1 Purpose<a class="headerlink" href="#purpose" title="Permalink to this headline">¶</a></h2>
-<p>This document describes the design Little Hill Lab’s initial requirements for an online application (Oh My Genes) which allows our scientists to upload gene expression files and quickly get differentially expressed genes., including the demand in function and performance.</p>
+<p>This document describes the design Little Hill Lab’s initial requirements for an online application (Oh My Genes) which allows our scientists to upload gene expression files and quickly get differentially expressed genes, including the demand in function and performance.</p>
 <p>The main purpose is identifying differentially expressed genes given a gene expression file containing two cell samples.</p>
 </div>
 <div class="section" id="scope">
 <h2>1.2 Scope<a class="headerlink" href="#scope" title="Permalink to this headline">¶</a></h2>
-<p>This document is to derive a logical model of objective system from the one of current system, and answer the question of ??what to do?? of this project .In this document , development techniques are not involved. The document is mainly to describe user??s requirement by modeling, to build a communication bridge for clients, users, and developers.</p>
+<p>This document is to derive a logical model of objective system from the one of current system, and answer the question of “what to do” of this project .In this document, development techniques are not involved. The document is mainly to describe user’s requirement by modeling, to build a communication bridge for clients, users, and developers.</p>
 </div>
 <div class="section" id="user-characteristics">
 <h2>1.3 User Characteristics<a class="headerlink" href="#user-characteristics" title="Permalink to this headline">¶</a></h2>
@@ -341,7 +353,7 @@
 <div class="section" id="source-and-background">
 <h2>2.1 Source and Background<a class="headerlink" href="#source-and-background" title="Permalink to this headline">¶</a></h2>
 <p>Gene identification is an important branch of bioinformatics, which uses biology experiment or computer identification methods such as DNA sequences on the biological characteristics of fragments.</p>
-<p>This project is an online application developed for Little Hill Laboratory for Optimal Life. The Little Hill Lab??s need an online application which allows their scientists to upload gene expression files and quickly get differentially expressed genes.  So the Lab needs an application to identify differentially expressed genes given a gene expression file containing two cell samples.</p>
+<p>This project is an online application developed for Little Hill Laboratory for Optimal Life. The Little Hill Lab’s need an online application which allows their scientists to upload gene expression files and quickly get differentially expressed genes. So the Lab needs an application to identify differentially expressed genes given a gene expression file containing two cell samples.</p>
 </div>
 <div class="section" id="goal-of-the-project">
 <h2>2.2 Goal of the Project<a class="headerlink" href="#goal-of-the-project" title="Permalink to this headline">¶</a></h2>
@@ -353,8 +365,8 @@
 </div>
 <div class="section" id="structure-of-the-system">
 <h2>2.3 Structure of the System<a class="headerlink" href="#structure-of-the-system" title="Permalink to this headline">¶</a></h2>
-<p>Based on the descriptions of users??the system should be one parts ??clients. This client is to provide function like upload a text file, result .Their relations are described in Fig.1</p>
-<p>The scientists upload a plain text file containing gene expression levels from two samples, representing two experimental conditions.  Accepting the file, the software will return a table of differentially expressed genes and a scatter plot of these genes whose X-axis is control and Y-axis is treatment.  If an invalid gene expression is given, the web application returns a page informing the user to provide the correct format.</p>
+<p>Based on the descriptions of users, the system should be one parts: clients. This client is to provide function like upload a text file, result. Their relations are described in Fig.1.</p>
+<p>The scientists upload a plain text file containing gene expression levels from two samples, representing two experimental conditions. Accepting the file, the software will return a table of differentially expressed genes and a scatter plot of these genes whose X-axis is control and Y-axis is treatment. If an invalid gene expression is given, the web application returns a page informing the user to provide the correct format.</p>
 <img alt="_images/fig1.png" src="_images/fig1.png" />
 </div>
 </div>
@@ -366,8 +378,8 @@
 <h2>3.1 Network Environment<a class="headerlink" href="#network-environment" title="Permalink to this headline">¶</a></h2>
 <p>Both the users in client side and web site maintainers in management side can access this system through network. The web has an independent host, independent IP and independent domain name.</p>
 </div>
-<div class="section" id="id2">
-<h2>3.1 Network Environment<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h2>3.1 Network Environment<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>Both the users in client side and web site maintainers in management side can access this system through network. The web has an independent host, independent IP and independent domain name.</p>
 </div>
 <div class="section" id="hardware-environment">
@@ -375,18 +387,18 @@
 <ul class="simple">
 <li>Client: PC</li>
 </ul>
-<p>CPU: P4 1.8 GHZ
-Memory: 256 MB above</p>
+<p>CPU: P4 1.8 GHZ</p>
+<p>Memory: 256 MB above</p>
 <ul class="simple">
 <li>Web server</li>
 </ul>
-<p>CPU: P4 1.8GHz
-Memory: 256 MB above</p>
+<p>CPU: P4 1.8GHz</p>
+<p>Memory: 256 MB above</p>
 <ul class="simple">
 <li>Database server</li>
 </ul>
-<p>CPU: P4 1.8GHz
-Memory: 256 MB above</p>
+<p>CPU: P4 1.8GHz</p>
+<p>Memory: 256 MB above</p>
 </div>
 <div class="section" id="software-environment">
 <h2>3.3 Software Environment<a class="headerlink" href="#software-environment" title="Permalink to this headline">¶</a></h2>
@@ -406,7 +418,7 @@ Memory: 256 MB above</p>
 <p>A valid submitted gene expression file has the following format:</p>
 <ul class="simple">
 <li>It is a TAB-delimited, plain text file with three columns (see the attached file for a full example).</li>
-<li>The file contains an optional head line, followed by each gene’s expression in a control sample (e.g., ControlSample) and in a treatment sample (e.g., KnockOutSample).</li>
+<li>The file contains an optional head line, followed by each gene’s expression in a control sample (e.g., ControlSample) and in a treatment sample (e.g.KnockOutSample).</li>
 </ul>
 <table border="1" class="docutils">
 <colgroup>
@@ -478,11 +490,33 @@ Memory: 256 MB above</p>
 <div class="section" id="table">
 <h3>4.2.1 Table<a class="headerlink" href="#table" title="Permalink to this headline">¶</a></h3>
 <p>The table contains a list of differentially expressed genes with the following format:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="29%" />
+<col width="27%" />
+<col width="27%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">gene_id</th>
+<th class="head">control_sample</th>
+<th class="head">treat_sample</th>
+<th class="head">log_2[FC]</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>AT1G01010</td>
+<td>1.198558083</td>
+<td>2.036161827</td>
+<td>0.76</td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="section" id="scatter-plot">
 <h3>4.2.2 Scatter plot<a class="headerlink" href="#scatter-plot" title="Permalink to this headline">¶</a></h3>
-<p>The scatter plot displays differentially expressed genes.  The X-axis is Control, and Y-axis is Treatment. (fig.2)
-Replace ‘Control’ and ‘Treatment’ with appropriated column names if provided in the uploaded file.  The up-regulated genes are shown in red dots, and down-regulated genes are shown in blue.</p>
+<p>The scatter plot displays differentially expressed genes. The X-axis is Control, and Y-axis is Treatment. (fig.2)</p>
+<p>Replace ‘Control’ and ‘Treatment’ with appropriated column names if provided in the uploaded file.  The up-regulated genes are shown in red dots, and down-regulated genes are shown in blue.</p>
 <img alt="_images/fig2.png" src="_images/fig2.png" />
 </div>
 </div>
@@ -494,9 +528,9 @@ Replace ‘Control’ and ‘Treatment’ with appropriated column names if prov
 <h2>5.1 Interface Requirement<a class="headerlink" href="#interface-requirement" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>Page contents: Topic-prominent, the form of website definition, terms and passage should universal, standard and explicit.</li>
-<li>Navigation structure: the page should have an explicit navigation direction for user??s convenient.</li>
+<li>Navigation structure: the page should have an explicit navigation direction for user’s convenient.</li>
 <li>Technical environment: The page can be displayed by all kinds of browser in different resolution; No error links and null links; The layout of page are processed by CSS.</li>
-<li>Artistic style: Clean interface ; Rational layout; Right front size; Harmonious color.</li>
+<li>Artistic style: Clean interface; Rational layout; Right front size; Harmonious color.</li>
 </ul>
 </div>
 <div class="section" id="response-time-requirement">
@@ -543,7 +577,7 @@ Replace ‘Control’ and ‘Treatment’ with appropriated column names if prov
 <h1>7. Change Cases<a class="headerlink" href="#change-cases" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li>The system will be developed with greater compatibility.</li>
-<li>It will get more investment to increase the budget, and get more support from different teams, so that there will be more powerful technical force to maintain website development</li>
+<li>It will get more investment to increase the budget, and get more support from different teams, so that there will be more powerful technical force to maintain website development.</li>
 <li>There will be more functions in the system, just like users can communicate, discus problems and share information to others.</li>
 <li>Algorithm accuracy of data will be higher.</li>
 </ul>
@@ -564,10 +598,10 @@ Replace ‘Control’ and ‘Treatment’ with appropriated column names if prov
 <h1>9. Appendices<a class="headerlink" href="#appendices" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="summary-report">
 <h2>9.1 Summary Report<a class="headerlink" href="#summary-report" title="Permalink to this headline">¶</a></h2>
-<p>Overall, the document also includes the basic information structure of system by words and illustrations. This SRS incorporates the most recent version of most of the requirements. It shows the function requirements and non-functional requirements that help readers know the project better. What??s more, we illustrate the related operations, how the system deals with data that users upload and does response and also made a scatter plot to explain operation mechanism more simply and clearly.</p>
+<p>Overall, the document also includes the basic information structure of system by words and illustrations. This SRS incorporates the most recent version of most of the requirements. It shows the function requirements and non-functional requirements that help readers know the project better. What’s more, we illustrate the related operations, how the system deals with data that users upload and does response and also made a scatter plot to explain operation mechanism more simply and clearly.</p>
 <p>However, we did find there to be some areas where requirements for requested features had been omitted or incomplete. A few requirements that arose from the negotiations failed to appear in the document, but overall the requirements are shaping nicely.</p>
 <p>We found some constraints in many ways, and according to these we put forward some change cases that maybe will be realized.</p>
-<p>n a word, we try to find issues and provide further information on the features we require for the system.</p>
+<p>In a word, we try to find issues and provide further information on the features we require for the system.</p>
 </div>
 <div class="section" id="change-log">
 <h2>9.2 Change Log<a class="headerlink" href="#change-log" title="Permalink to this headline">¶</a></h2>

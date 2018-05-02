@@ -9,25 +9,35 @@ Oh My Genes
 Software Requirements Specification Version1.0
 ==============================================
 
+------------
+
+Group members:
+-------------- 
+    * Huang Anbei  (201632120104)
+    * Liang Yufang (201632120106)
+------------
+
+
+
 Indices and tables
 ------------------ 
 .. toctree::
    :maxdepth: 2
    :numbered:
 
-* `1.Introduction <https://habwithlyf-srs-omg.readthedocs-hosted.com/en/latest/introduction.html>`_
+* 1.Introduction 
     * 1.1Purpose 
     * 1.2 Scope
     * 1.3 User characteristics
     * 1.4 Overview
     * 1.5 Glossaries
 
-* 2. System Definitions
+* 2. System Definitions 
     * 2.1 Source and Background of the Project
     * 2.2 Goal of the Project
     * 2.3	Structure of the System
 
-* 3. Running Environment
+* 3. Running Environment 
     * 3.1 Network Environment 
     * 3.2 Hardware Environment
     * 3.3 Software Environment
@@ -58,21 +68,21 @@ Indices and tables
     * 9.2 Change Log
 * 10.References
 
+----------------------
 
-------------
 
 1. Introduction
 ===============
 
 1.1 Purpose
 -----------
-This document describes the design Little Hill Lab's initial requirements for an online application (Oh My Genes) which allows our scientists to upload gene expression files and quickly get differentially expressed genes., including the demand in function and performance.
+This document describes the design Little Hill Lab's initial requirements for an online application (Oh My Genes) which allows our scientists to upload gene expression files and quickly get differentially expressed genes, including the demand in function and performance.
 
 The main purpose is identifying differentially expressed genes given a gene expression file containing two cell samples.
 
 1.2 Scope
 ---------
-This document is to derive a logical model of objective system from the one of current system, and answer the question of ¡°what to do¡± of this project .In this document , development techniques are not involved. The document is mainly to describe user¡¯s requirement by modeling, to build a communication bridge for clients, users, and developers.
+This document is to derive a logical model of objective system from the one of current system, and answer the question of "what to do" of this project .In this document, development techniques are not involved. The document is mainly to describe user's requirement by modeling, to build a communication bridge for clients, users, and developers.
 
 1.3 User Characteristics
 ------------------------
@@ -105,7 +115,7 @@ The web application has a simple interface with a single button [Upload and GO].
 -------------------------
 Gene identification is an important branch of bioinformatics, which uses biology experiment or computer identification methods such as DNA sequences on the biological characteristics of fragments.
 
-This project is an online application developed for Little Hill Laboratory for Optimal Life. The Little Hill Lab¡¯s need an online application which allows their scientists to upload gene expression files and quickly get differentially expressed genes.  So the Lab needs an application to identify differentially expressed genes given a gene expression file containing two cell samples.
+This project is an online application developed for Little Hill Laboratory for Optimal Life. The Little Hill Lab's need an online application which allows their scientists to upload gene expression files and quickly get differentially expressed genes. So the Lab needs an application to identify differentially expressed genes given a gene expression file containing two cell samples.
 
 
 2.2 Goal of the Project
@@ -122,9 +132,9 @@ This project is an online application developed for Little Hill Laboratory for O
 2.3 Structure of the System
 ---------------------------
 
-Based on the descriptions of users£¬the system should be one parts £ºclients. This client is to provide function like upload a text file, result .Their relations are described in Fig.1
+Based on the descriptions of users, the system should be one parts: clients. This client is to provide function like upload a text file, result. Their relations are described in Fig.1.
 
-The scientists upload a plain text file containing gene expression levels from two samples, representing two experimental conditions.  Accepting the file, the software will return a table of differentially expressed genes and a scatter plot of these genes whose X-axis is control and Y-axis is treatment.  If an invalid gene expression is given, the web application returns a page informing the user to provide the correct format.
+The scientists upload a plain text file containing gene expression levels from two samples, representing two experimental conditions. Accepting the file, the software will return a table of differentially expressed genes and a scatter plot of these genes whose X-axis is control and Y-axis is treatment. If an invalid gene expression is given, the web application returns a page informing the user to provide the correct format.
 
 .. image:: fig1.png
 
@@ -149,14 +159,17 @@ Both the users in client side and web site maintainers in management side can ac
 ------------------------
 * Client: PC
 CPU: P4 1.8 GHZ
+
 Memory: 256 MB above
 
 * Web server
 CPU: P4 1.8GHz
+
 Memory: 256 MB above
 
 * Database server
 CPU: P4 1.8GHz
+
 Memory: 256 MB above
 
 
@@ -185,7 +198,7 @@ Memory: 256 MB above
 A valid submitted gene expression file has the following format:
 
 * It is a TAB-delimited, plain text file with three columns (see the attached file for a full example).  
-* The file contains an optional head line, followed by each gene's expression in a control sample (e.g., ControlSample) and in a treatment sample (e.g., KnockOutSample).
+* The file contains an optional head line, followed by each gene's expression in a control sample (e.g., ControlSample) and in a treatment sample (e.g.KnockOutSample).
 
 ============  ================  ===============
  gene_id	ControlSample	KnockOutSample
@@ -227,12 +240,13 @@ The table contains a list of differentially expressed genes with the following f
 ==========  ================  ===============  ===============
  gene_id     control_sample     treat_sample	  log_2[FC]
 ==========  ================  ===============  ===============
-AT1G01010   1.198558083	      2.036161827     0.76
+AT1G01010   1.198558083	      2.036161827      0.76
 ==========  ================  ===============  ===============
 
 4.2.2 Scatter plot
 >>>>>>>>>>>>>>>>>>
-The scatter plot displays differentially expressed genes.  The X-axis is Control, and Y-axis is Treatment. (fig.2)
+The scatter plot displays differentially expressed genes. The X-axis is Control, and Y-axis is Treatment. (fig.2)
+
 Replace 'Control' and 'Treatment' with appropriated column names if provided in the uploaded file.  The up-regulated genes are shown in red dots, and down-regulated genes are shown in blue.
 
 .. image:: fig2.png
@@ -247,11 +261,11 @@ Replace 'Control' and 'Treatment' with appropriated column names if provided in 
 --------------------------
 * Page contents: Topic-prominent, the form of website definition, terms and passage should universal, standard and explicit.
 
-* Navigation structure: the page should have an explicit navigation direction for user¡¯s convenient.
+* Navigation structure: the page should have an explicit navigation direction for user's convenient.
 
 * Technical environment: The page can be displayed by all kinds of browser in different resolution; No error links and null links; The layout of page are processed by CSS.
 
-* Artistic style: Clean interface ; Rational layout; Right front size; Harmonious color.
+* Artistic style: Clean interface; Rational layout; Right front size; Harmonious color.
 
 5.2 Response Time Requirement
 -----------------------------
@@ -302,7 +316,7 @@ The system downtime should **less than 30 minutes per year** to avoid causing pr
 ===============
 
 * The system will be developed with greater compatibility.
-* It will get more investment to increase the budget, and get more support from different teams, so that there will be more powerful technical force to maintain website development
+* It will get more investment to increase the budget, and get more support from different teams, so that there will be more powerful technical force to maintain website development.
 * There will be more functions in the system, just like users can communicate, discus problems and share information to others.
 * Algorithm accuracy of data will be higher.
 
@@ -324,13 +338,13 @@ The system downtime should **less than 30 minutes per year** to avoid causing pr
 
 9.1 Summary Report
 ------------------
-Overall, the document also includes the basic information structure of system by words and illustrations. This SRS incorporates the most recent version of most of the requirements. It shows the function requirements and non-functional requirements that help readers know the project better. What¡¯s more, we illustrate the related operations, how the system deals with data that users upload and does response and also made a scatter plot to explain operation mechanism more simply and clearly. 
+Overall, the document also includes the basic information structure of system by words and illustrations. This SRS incorporates the most recent version of most of the requirements. It shows the function requirements and non-functional requirements that help readers know the project better. What's more, we illustrate the related operations, how the system deals with data that users upload and does response and also made a scatter plot to explain operation mechanism more simply and clearly. 
 
 However, we did find there to be some areas where requirements for requested features had been omitted or incomplete. A few requirements that arose from the negotiations failed to appear in the document, but overall the requirements are shaping nicely.
 
 We found some constraints in many ways, and according to these we put forward some change cases that maybe will be realized. 
 
-n a word, we try to find issues and provide further information on the features we require for the system. 
+In a word, we try to find issues and provide further information on the features we require for the system. 
 
 9.2 Change Log
 --------------
@@ -346,7 +360,7 @@ April 30th	Writing summary report
 -------------------
 
 10. References
-=============
+==============
 https://wenku.baidu.com/view/81bf5166a76e58fafab003ba.html
 http://web.uvic.ca/~cshen/seng321/project.html
 
