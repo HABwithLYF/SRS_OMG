@@ -3,7 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to SRS of OMG's documentation!
+Oh My Genes
+Software Requirements Specification Version1.0
 ======================================
 
 .. toctree::
